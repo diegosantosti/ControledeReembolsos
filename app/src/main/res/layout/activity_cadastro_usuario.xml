@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.scsa.controledereembolsos.CadastroUsuarioActivity"
+    android:orientation="vertical">
+
+    <!-- Abas Informações -->
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_host"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Aba Informações Usuário -->
+                <LinearLayout
+                    android:id="@+id/cad_usuario_info_usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp">
+
+                    <EditText
+                        android:id="@+id/cad_usuario_campo_nome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nome Completo"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <EditText
+                            android:id="@+id/cad_usuario_campo_telefone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="phone"
+                            android:hint="Telefone Móvel"/>
+                        <EditText
+                            android:id="@+id/cad_usuario_campo_validador"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Validador"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <EditText
+                            android:id="@+id/cad_usuario_campo_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textEmailAddress"
+                            android:hint="Email Corporativo"/>
+
+                        <EditText
+                            android:id="@+id/cad_usuario_campo_senha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPassword"
+                            android:hint="Senha" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Aba Informações Complementares -->
+                <LinearLayout
+                    android:id="@+id/cad_usuario_info_complementares"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/cad_usuario_campo_cod_cadastro_geral"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:hint="Cód Cadastro Geral"
+                        />
+
+                    <EditText
+                        android:id="@+id/cad_usuario_campo_area_beneficiario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Área Beneficiário"
+                        />
+
+                    <EditText
+                        android:id="@+id/cad_usuario_campo_gestor_benficiario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Gestor Beneficiario"
+                        />
+
+                    <EditText
+                        android:id="@+id/cad_usuario_campo_cod_roteiro_aprovador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Cód. Roteiro Aprovador"
+                        />
+
+                </LinearLayout>
+
+                <!-- Aba Informações Bancarias -->
+                <LinearLayout
+                    android:id="@+id/cad_usuario_info_bancarias"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</LinearLayout>

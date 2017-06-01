@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Controle de Reembolsos</string>
+    <string name="title_activity_cadastro_usuario">Cadastro Usuário</string>
+    <string name="info_bancaria">Informações Bancárias</string>
+    <string name="info_usuario">Informações do Usuário</string>
+    <string name="info_complementar">Informações Complementares</string>
+
+
 </resources>
